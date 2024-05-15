@@ -75,7 +75,7 @@ For example: `(base) jamesharding@jamess-mbp bin % `
 1. Clone this repo.
 
 ```
-git clone https://github.com/mrdbourke/mac-ml-speed-test.git 
+git clone https://github.com/jth1911/mac-ml-speed-test.git
 ```
 
 2. Change into the repo directory.
