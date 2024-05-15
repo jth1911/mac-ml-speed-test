@@ -37,11 +37,13 @@ However, if you've already got `conda`, feel free to skip to the next section.
 
 ### Base environment setup 
 
-1. Install homebrew (or run `xcode-select --install` in terminal and skip to next step)
-- Verify installation `xcode-select -p`
-- Go to https://brew.sh/ and follow the main instructions on the front page.
-
-Run the commands on the homebrew webpage in the terminal and follow the instructions when they appear.
+1. Install homebrew using option 1 or 2.
+- Option 1:
+    - Run `xcode-select --install` in terminal
+    - Verify installation `xcode-select -p`
+    - Skip to step 2. 
+- Option 2: Go to https://brew.sh/ and follow the main instructions on the front page.
+  - Run the commands on the homebrew webpage in the terminal and follow the instructions when they appear.
 
 2. Install miniforge to get conda: https://github.com/conda-forge/miniforge 
 
