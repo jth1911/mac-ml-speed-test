@@ -37,40 +37,38 @@ However, if you've already got `conda`, feel free to skip to the next section.
 
 ### Base environment setup 
 
-1. Install homebrew (or run `xcode-select --install` in terminal and skip to next step)
+1.Install Xcode Command Line Tools
+- Run `xcode-select --install` in terminal
+- Run `xcode-select -p` in terminal to verify installation
+    - You should see the following: `/Library/Developer/CommandLineTools`
 
-Go to https://brew.sh/ and follow the main instructions on the front page.
+3. Install homebrew
+- Run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` in terminal
+- Run the commands on the homebrew webpage in the terminal and follow the instructions when they appear.
+- Run these two commands in your terminal to add Homebrew to your PATH:
+   -  `(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/jamesharding/.zprofile`
+   -  `eval "$(/opt/homebrew/bin/brew shellenv)"`
 
-Run the commands on the homebrew webpage in the terminal and follow the instructions when they appear.
 
-2. Install miniforge to get conda: https://github.com/conda-forge/miniforge 
+4. Install miniforge to get conda: https://github.com/conda-forge/miniforge 
 
 ```
 brew install miniforge
 ```
+source /opt/homebrew/Caskroom/miniforge/base/bin/activate
 
-or
 
-Download Miniforge3 for macOS ARM64 from: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
-
-3. Run the following commands in terminal with Miniforge3 downloaded into the `~/Downloads` folder:
+5. Initialize conda to see if it works.
 
 ```
-chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
-sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
+source /opt/homebrew/Caskroom/miniforge/base/bin/activate
 ```
 
-4. Follow the steps, for example, answer "yes", "yes", "ok" etc and then initialize conda to see if it works.
-
-```
-source ~/miniforge3/bin/activate
-```
-
-5. **Important:** Restart terminal and check conda is working.
+6. **Important:** Restart terminal and check conda is working.
 
 If conda is working, you should have a `(base)` at the start of your terminal prompt.
 
-For example: `(base) daniel@Daniels-MacBook-Pro-3 ~ %`
+For example: `(base) jamesharding@jamess-mbp bin % `
 
 ### Setting up for machine learning tests
 
