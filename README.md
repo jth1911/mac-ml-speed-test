@@ -55,8 +55,6 @@ However, if you've already got `conda`, feel free to skip to the next section.
 ```
 brew install miniforge
 ```
-source /opt/homebrew/Caskroom/miniforge/base/bin/activate
-
 
 5. Initialize conda to see if it works.
 
