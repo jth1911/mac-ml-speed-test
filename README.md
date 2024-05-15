@@ -115,10 +115,28 @@ conda install -c conda-forge pip pandas numpy matplotlib scikit-learn jupyterlab
 * Hugging Face Guides to Install [Transformers](https://huggingface.co/docs/transformers/installation), [Datasets](https://huggingface.co/docs/datasets/installation), [Evaluate](https://huggingface.co/docs/evaluate/installation), [Accelerate](https://huggingface.co/docs/accelerate/basic_tutorials/install).
 
 ```python
-conda install pytorch::pytorch torchvision -c pytorch
+
+conda install pytorch torchvision torchaudio -c pytorch-nightly
+
 ```
 
 > **Note:** MPS (Metal Performance Shaders, aka using the GPU on Apple Silicon) comes standard with PyTorch on macOS, you don't need to install anything extra. MPS can be accessed via [`torch.mps`](https://pytorch.org/docs/stable/mps.html), see more [notes in the PyTorch documentation](https://pytorch.org/docs/stable/notes/mps.html).
+
+You can verify mps support using a simple Python script:
+
+```
+import torch
+if torch.backends.mps.is_available():
+    mps_device = torch.device("mps")
+    x = torch.ones(1, device=mps_device)
+    print (x)
+else:
+    print ("MPS device not found.")
+```
+
+The output should show:
+
+`tensor([1.], device='mps:0')`
 
 ### Test PyTorch Computer Vision (CIFAR100)
 
