@@ -97,7 +97,7 @@ conda env list
 5. Activate newly created conda environment.
 
 ```
-conda activate ./env
+conda activate mac-ml-speed-test
 ```
 
 6. Install necessities/helper packages.
