@@ -38,8 +38,8 @@ However, if you've already got `conda`, feel free to skip to the next section.
 ### Base environment setup 
 
 1. Install homebrew (or run `xcode-select --install` in terminal and skip to next step)
-
-Go to https://brew.sh/ and follow the main instructions on the front page.
+- Verify installation `xcode-select -p`
+- Go to https://brew.sh/ and follow the main instructions on the front page.
 
 Run the commands on the homebrew webpage in the terminal and follow the instructions when they appear.
 
