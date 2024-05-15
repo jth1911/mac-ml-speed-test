@@ -85,10 +85,8 @@ cd mac-ml-speed-test
 3. Create conda environment.
 
 ```python
-conda create --prefix ./env python=3.10
+conda create --name mac-ml-speed-test python=3.10
 ```
-
-**Note:** You could also use `conda create --name some-env-name python=3.10` but I prefer `--prefix` as it's more explicit.
 
 4. Check conda environments.
 
