@@ -55,29 +55,20 @@ However, if you've already got `conda`, feel free to skip to the next section.
 ```
 brew install miniforge
 ```
+source /opt/homebrew/Caskroom/miniforge/base/bin/activate
 
-or
 
-Download Miniforge3 for macOS ARM64 from: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
-
-4. Run the following commands in terminal with Miniforge3 downloaded into the `~/Downloads` folder:
+5. Initialize conda to see if it works.
 
 ```
-chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
-sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
-```
-
-5. Follow the steps, for example, answer "yes", "yes", "ok" etc and then initialize conda to see if it works.
-
-```
-source ~/miniforge3/bin/activate
+source /opt/homebrew/Caskroom/miniforge/base/bin/activate
 ```
 
 6. **Important:** Restart terminal and check conda is working.
 
 If conda is working, you should have a `(base)` at the start of your terminal prompt.
 
-For example: `(base) daniel@Daniels-MacBook-Pro-3 ~ %`
+For example: `(base) jamesharding@jamess-mbp bin % `
 
 ### Setting up for machine learning tests
 
