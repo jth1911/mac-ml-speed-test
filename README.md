@@ -37,15 +37,16 @@ However, if you've already got `conda`, feel free to skip to the next section.
 
 ### Base environment setup 
 
-1. Install homebrew using option 1 or 2.
-- Option 1:
-    - Run `xcode-select --install` in terminal
-    - Verify installation `xcode-select -p`
-    - Skip to step 2. 
-- Option 2: Go to https://brew.sh/ and follow the main instructions on the front page.
-  - Run the commands on the homebrew webpage in the terminal and follow the instructions when they appear.
+1.Install Xcode Command Line Tools
+- Run `xcode-select --install` in terminal
+- Run `xcode-select -p` in terminal to verify installation
+    - You should see the following: `/Library/Developer/CommandLineTools`
 
-2. Install miniforge to get conda: https://github.com/conda-forge/miniforge 
+3. Install homebrew
+- Run `$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` in terminal
+- Run the commands on the homebrew webpage in the terminal and follow the instructions when they appear.
+
+4. Install miniforge to get conda: https://github.com/conda-forge/miniforge 
 
 ```
 brew install miniforge
@@ -55,20 +56,20 @@ or
 
 Download Miniforge3 for macOS ARM64 from: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
 
-3. Run the following commands in terminal with Miniforge3 downloaded into the `~/Downloads` folder:
+4. Run the following commands in terminal with Miniforge3 downloaded into the `~/Downloads` folder:
 
 ```
 chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
 sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
 ```
 
-4. Follow the steps, for example, answer "yes", "yes", "ok" etc and then initialize conda to see if it works.
+5. Follow the steps, for example, answer "yes", "yes", "ok" etc and then initialize conda to see if it works.
 
 ```
 source ~/miniforge3/bin/activate
 ```
 
-5. **Important:** Restart terminal and check conda is working.
+6. **Important:** Restart terminal and check conda is working.
 
 If conda is working, you should have a `(base)` at the start of your terminal prompt.
 
