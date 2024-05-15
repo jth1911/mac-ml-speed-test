@@ -43,8 +43,12 @@ However, if you've already got `conda`, feel free to skip to the next section.
     - You should see the following: `/Library/Developer/CommandLineTools`
 
 3. Install homebrew
-- Run `$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` in terminal
+- Run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` in terminal
 - Run the commands on the homebrew webpage in the terminal and follow the instructions when they appear.
+- Run these two commands in your terminal to add Homebrew to your PATH:
+   -  `(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/jamesharding/.zprofile`
+   -  `eval "$(/opt/homebrew/bin/brew shellenv)"`
+
 
 4. Install miniforge to get conda: https://github.com/conda-forge/miniforge 
 
